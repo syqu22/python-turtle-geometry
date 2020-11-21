@@ -1,0 +1,2 @@
+class Hexagon:
+    pass
