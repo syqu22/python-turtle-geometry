@@ -10,7 +10,7 @@ class Randomize:
     @staticmethod
     def pos():
         x = 400
-        y = 200
+        y = 350
         return randint(-x,x), randint(-y,y)
 
     @staticmethod
