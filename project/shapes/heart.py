@@ -1,2 +1,2 @@
-class Heart:
+class Heart():
     pass

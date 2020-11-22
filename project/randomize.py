@@ -1,4 +1,4 @@
-from random import randint
+from random import randint, choice
 
 class Randomize:
     
@@ -16,6 +16,11 @@ class Randomize:
     @staticmethod
     def size():
         return randint(10, 55)
+    
+    @staticmethod
+    def star_size():
+        sequence = [1,3.5,4,6]
+        return choice(sequence)
 
     @staticmethod
     def angle():

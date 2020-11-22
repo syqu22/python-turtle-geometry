@@ -9,7 +9,6 @@ class Ring(Shape):
         #Draw desired shape using Bob from parent class
         self = super().getTurtle()  
         print(f"Bob {Shape.id} on duty, drawing Ring on {self.pos()}.")
-        self.pensize(3)
         #First circle
         self.begin_fill()
         self.circle(range)

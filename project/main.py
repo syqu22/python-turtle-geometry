@@ -1,4 +1,4 @@
-from shapes import scalene, ring, hexagon
+from shapes import scalene, ring, hexagon, star
 from randomize import Randomize as rand
 
 def start_turtles():
@@ -9,6 +9,7 @@ def start_turtles():
         ring.Ring(rand.size(), rand.pos(), rand.color(), rand.color(), rand.range())      
         #Hexagons
         hexagon.Hexagon(rand.size(), rand.pos(), rand.color(),rand.color(), rand.angle(), rand.range())
-
+        #Stars
+        star.Star(rand.star_size(), rand.pos(), rand.color(),rand.color(), rand.angle())
 
 start_turtles()
