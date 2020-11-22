@@ -8,11 +8,19 @@ class Ring(Shape):
         
         #Draw desired shape using Bob from parent class
         self = super().getTurtle()  
-        self.pensize(2)
-        self.circle(range*1.5)
+        self.pensize(4)
+        #First circle
+        self.begin_fill()
+        self.circle(range)
         self.goto(pos)
         self.up()
         self.left(90)
-        self.forward(range*4)
+        self.forward(range*0.5)
+        self.right(90)
         self.down()
-        self.circle(range)
+        self.end_fill()
+        #Second Circle
+        self.color(color, "white")
+        self.begin_fill()
+        self.circle(range*0.5)
+        self.end_fill()
