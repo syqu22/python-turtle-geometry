@@ -1,13 +1,16 @@
 import turtle
 
 class Shape():
+    id = 0
+
     def __init__(self, size, pos, color, fillcolor):
         self.size = size
         self.pos = pos
         self.color = color
         self.fillcolor = fillcolor
+        Shape.id += 1
 
-    #Create a new turtle named Bob then return it for drawing purpose
+    #Create a new turtle named Bob then return it for drawing purposes
     def getTurtle(self):
         bob = turtle.Turtle(visible=False)
         bob.color(self.color, self.fillcolor)

@@ -8,6 +8,7 @@ class Ring(Shape):
         
         #Draw desired shape using Bob from parent class
         self = super().getTurtle()  
+        print(f"Bob {Shape.id} spawned, drawing Ring on {self.pos()}.")
         self.pensize(4)
         #First circle
         self.begin_fill()
@@ -19,7 +20,7 @@ class Ring(Shape):
         self.right(90)
         self.down()
         self.end_fill()
-        #Second Circle
+        #Second Circle inside First Circle
         self.color(color, "white")
         self.begin_fill()
         self.circle(range*0.5)

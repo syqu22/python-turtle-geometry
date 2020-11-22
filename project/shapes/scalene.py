@@ -8,9 +8,10 @@ class Scalene(Shape):
 
         #Draw desired shape using Bob from parent class
         self = super().getTurtle()
-        self.left(angle)
-        self.forward(10 * size)
-        self.left(15 * size)
-        self.forward(14.5 * size)
+        print(f"Bob {Shape.id} spawned, drawing Scalene on {self.pos()}.")
+        self.tilt(angle)
+        self.forward(6 * size)
+        self.right(7 * size)
+        self.forward(8 * size)
         self.goto(pos)
         self.end_fill()
