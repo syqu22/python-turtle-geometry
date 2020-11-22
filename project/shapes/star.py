@@ -5,9 +5,11 @@ class Star(Shape):
         super().__init__(size, pos, color, fillcolor, pen_size)
         self.angle = angle
  
-        #Draw desired shape using Bob from parent class
+        #Get Bob from parent class
         self = super().getTurtle()  
         print(f"Bob {Shape.id} on duty, drawing Star on {self.pos()}.")
+
+        #Do a basic drawing of Hexagon
         self.begin_fill()
         self.left(angle)
         for i in range(5):

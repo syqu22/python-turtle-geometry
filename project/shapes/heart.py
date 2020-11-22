@@ -1,4 +1,3 @@
-import turtle
 from .shape import Shape
 
 class Heart(Shape):

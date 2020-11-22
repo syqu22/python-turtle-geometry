@@ -5,9 +5,11 @@ class Scalene(Shape):
         super().__init__(size, pos, color, fillcolor, pen_size)
         self.angle = angle
 
-        #Draw desired shape using Bob from parent class
+        #Get Bob from parent class
         self = super().getTurtle()
         print(f"Bob {Shape.id} on duty, drawing Scalene on {self.pos()}.")
+
+        #Do a basic drawing of Scalene
         self.tilt(angle)
         self.forward(5 * size)
         self.right(8 * size)

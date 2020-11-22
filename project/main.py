@@ -3,15 +3,15 @@ from randomize import Randomize as rand
 
 def start_turtles():
     for i in range(4):
-        #Scalenes
+        #Scalene
         scalene.Scalene(rand.size(), rand.pos(), rand.color(), rand.color(),rand.pen_size(), rand.angle())
-        #Rings
+        #Ring
         ring.Ring(rand.size(), rand.pos(), rand.color(), rand.color(),rand.pen_size(), rand.range())      
-        #Hexagons
+        #Hexagon
         hexagon.Hexagon(rand.size(), rand.pos(), rand.color(),rand.color(),rand.pen_size(), rand.angle(), rand.range())
-        #Stars
+        #Star
         star.Star(rand.star_size(), rand.pos(), rand.color(),rand.color(),rand.pen_size(), rand.angle())
-        #Hearts
+        #Heart
         heart.Heart(rand.star_size(), rand.pos(), rand.color(),rand.color(),rand.pen_size(), rand.angle())
 
 start_turtles()
