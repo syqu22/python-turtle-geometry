@@ -6,11 +6,10 @@ class Ring(Shape):
         self.range = range
         
         #Get Bob from parent class
-        self = super().getTurtle()  
+        self = super().get_turtle()
         print(f"Bob {Shape.id} on duty, drawing Ring on {self.pos()}.")
 
         #Draw the outter circle first
-        self.begin_fill()
         self.circle(range)
         self.goto(pos)
         self.up()
@@ -19,7 +18,8 @@ class Ring(Shape):
         self.right(90)
         self.down()
         self.end_fill()
-        #Draw the inner circle with filling it with white color so it can imitate empty circle
+        
+        #Draw the inner circle and fill it with white color
         self.color(color, "white")
         self.begin_fill()
         self.circle(range*0.5)

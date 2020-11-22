@@ -1,18 +1,19 @@
 from random import randint, choice
 
 class Randomize:
+    #Simple class with only static methods created for better space management
     
     #Randomizes color
     @staticmethod
     def color():  
-        color = ["red","blue","green","orange","black","purple","pink", "grey", "white", "brown"]
+        color = ["red","blue","green","orange","purple","pink", "grey", "white", "brown", "lime", "gold","magenta","indigo","turquoise","silver"]
         return color[randint(0,6)]
 
-    #Randomizes position from x = (-333,333) and y = (-333,333)
+    #Randomizes position from x = (-400,400) and y = (-300,300)
     @staticmethod
     def pos():
-        x = 333
-        y = 333
+        x = 400
+        y = 300
         return randint(-x,x), randint(-y,y)
 
     #Randomizes size from 10 to 55

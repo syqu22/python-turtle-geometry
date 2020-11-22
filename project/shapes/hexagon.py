@@ -7,11 +7,10 @@ class Hexagon(Shape):
         self.range = range
  
         #Get Bob from parent class
-        self = super().getTurtle()  
+        self = super().get_turtle()
         print(f"Bob {Shape.id} on duty, drawing Hexagon on {self.pos()}.")
 
         #Do a basic drawing of Hexagon
-        self.begin_fill()  
         self.left(angle)      
         self.circle(range, steps=5)
         self.end_fill()

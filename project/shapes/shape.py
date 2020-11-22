@@ -13,17 +13,19 @@ class Shape():
         self.pen_size = pen_size
         Shape.id += 1
 
-    #Create a new turtle named Bob using given variables
-    def getTurtle(self):
+    #Create a getter for turtle
+    def get_turtle(self):
         bob = turtle.Turtle(visible=False)
         bob.color(self.color, self.fillcolor)
         bob.pensize(self.pen_size)
-        bob.begin_fill()
-        bob.speed(15)
+        bob.speed(20)
+        
+        #Very important is to make him stop drawing, move him to starting position then let him draw again
         bob.up()        
         bob.setpos(self.pos)
-        bob.down() 
+        bob.down()
+        bob.begin_fill() 
 
-        #Return Bob for later drawing
+        #Return Bob to use him for drawing
         return(bob)        
         

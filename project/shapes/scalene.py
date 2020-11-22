@@ -6,11 +6,11 @@ class Scalene(Shape):
         self.angle = angle
 
         #Get Bob from parent class
-        self = super().getTurtle()
+        self = super().get_turtle()
         print(f"Bob {Shape.id} on duty, drawing Scalene on {self.pos()}.")
 
         #Do a basic drawing of Scalene
-        self.tilt(angle)
+        self.left(angle)
         self.forward(5 * size)
         self.right(8 * size)
         self.forward(6 * size)

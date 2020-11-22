@@ -1,7 +1,9 @@
 from shapes import scalene, ring, hexagon, star, heart
 from randomize import Randomize as rand
+from turtle import Screen
 
 def start_turtles():
+    #Initiate turtles by calling methods and giving them needed parameters
     for i in range(4):
         #Scalene
         scalene.Scalene(rand.size(), rand.pos(), rand.color(), rand.color(),rand.pen_size(), rand.angle())
@@ -12,6 +14,6 @@ def start_turtles():
         #Star
         star.Star(rand.star_size(), rand.pos(), rand.color(),rand.color(),rand.pen_size(), rand.angle())
         #Heart
-        heart.Heart(rand.star_size(), rand.pos(), rand.color(),rand.color(),rand.pen_size(), rand.angle())
+        heart.Heart(rand.size(), rand.pos(), rand.color(),rand.color(),rand.pen_size(), rand.angle())
 
 start_turtles()
