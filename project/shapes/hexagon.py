@@ -2,8 +2,8 @@ import turtle
 from .shape import Shape
 
 class Hexagon(Shape):
-    def __init__(self, size, pos, color, fillcolor, angle, range):
-        super().__init__(size, pos, color, fillcolor)
+    def __init__(self, size, pos, color, fillcolor, pen_size, angle, range):
+        super().__init__(size, pos, color, fillcolor, pen_size)
         self.angle = angle
         self.range = range
  

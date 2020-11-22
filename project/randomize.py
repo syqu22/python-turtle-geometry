@@ -18,6 +18,10 @@ class Randomize:
         return randint(10, 55)
     
     @staticmethod
+    def pen_size():
+        return randint(1,2)
+    
+    @staticmethod
     def star_size():
         sequence = [1,3.5,4,6]
         return choice(sequence)

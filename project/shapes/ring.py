@@ -2,8 +2,8 @@ import turtle
 from .shape import Shape
 
 class Ring(Shape):
-    def __init__(self, size, pos, color, fillcolor, range):
-        super().__init__(size, pos, color, fillcolor)
+    def __init__(self, size, pos, color, fillcolor, pen_size, range):
+        super().__init__(size, pos, color, fillcolor, pen_size)
         self.range = range
         
         #Draw desired shape using Bob from parent class

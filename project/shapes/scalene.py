@@ -2,8 +2,8 @@ import turtle
 from .shape import Shape
 
 class Scalene(Shape):
-    def __init__(self, size, pos, color, fillcolor, angle):
-        super().__init__(size, pos, color, fillcolor)
+    def __init__(self, size, pos, color, fillcolor, pen_size, angle):
+        super().__init__(size, pos, color, fillcolor, pen_size)
         self.angle = angle
 
         #Draw desired shape using Bob from parent class
