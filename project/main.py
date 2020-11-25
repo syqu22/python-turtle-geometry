@@ -1,6 +1,5 @@
-from shapes import scalene, ring, hexagon, star, heart
+from shapes import scalene, ring, hexagon, star, heart, shape
 from randomize import Randomize as rand
-from turtle import Screen
 
 def start_turtles():
     #Initiate turtles by calling methods and giving them needed parameters
