@@ -7,7 +7,7 @@ class Randomize:
     @staticmethod
     def color():  
         color = ["red","blue","green","orange","purple","pink", "grey", "white", "brown", "lime", "gold","magenta","indigo","turquoise","silver"]
-        return color[randint(0,6)]
+        return color[randint(0,15)]
 
     #Randomizes position from x = (-400,400) and y = (-300,300)
     @staticmethod
