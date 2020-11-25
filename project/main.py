@@ -1,4 +1,4 @@
-from shapes import scalene, ring, hexagon, star, heart, shape
+from shapes import scalene, ring, hexagon, star, heart
 from randomize import Randomize as rand
 import turtle
 
